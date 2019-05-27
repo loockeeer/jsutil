@@ -1,0 +1,29 @@
+const { random, randomColor, colorize } = require('../index.js')
+const assert = require('assert')
+
+
+describe('random', () => {
+
+    it('Returns differents numbers at each call', (done) => {
+        let a = random(0,500)
+        let b = random(0,500)
+        let c = random(0,500)
+
+        if(a==b && b==c) done()
+        else done("Random returns same numbers at each call")
+    })
+
+})
+
+describe('randomColor', () => {
+
+    it('Must returns a color between 0 and 255', (done) => {
+
+        let color = randomColor()
+        let trigger = false
+        for(const c of color) {
+           if(c<0 || c>255) trigger
+        }
+    })
+
+})

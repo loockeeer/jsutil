@@ -1,0 +1,17 @@
+{
+  "name": "jsutil",
+  "version": "1.0.0",
+  "description": "A node package that adds cool functions for faster programming.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "util"
+  ],
+  "author": "loockeeer",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  }
+}
